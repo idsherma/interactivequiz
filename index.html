@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<h1>Quiz App</h1>
+	<h3>Test your Superhero knowledge with this quiz!</h3>
+	<section class="grid-wrap" id="grid">
+		<div class="grid-wrap">
+			<div class ="row1">
+				<figure><img src="pic/avengers.jpg" index = "0" id="avengers" class = "comic" alt="img1" height="500px"/></figure>
+				<figure><img src="pic/batmandetective.jpg" index = "1" id="batman" alt="img2" height="500px"/></figure>
+				<figure><img src="pic/captainamerica.jpg" index = "2" id="america" alt="img3" height="500px"/></figure>
+			</div>
+			<div class ="row2">
+				<figure><img src="pic/flash.jpg" alt="img1" index = "3" id="flash" height="500px"/></figure>
+				<figure><img src="pic/green-lantern.jpg" index = "4" id="lantern" alt="img1" height="500px"/></figure>
+				<figure><img src="pic/hulk.jpg" alt="img1" index = "5" id="hulk" height="500px"/></figure>
+			</div>
+			<div class ="row3">
+				<figure><img src="pic/spiderman.jpg" alt="img1" index = "6" id="spiderman" height="500px"/></figure>
+				<figure><img src="pic/superman.jpg" alt="img1" index = "7" id="superman" height="500px"/></figure>
+				<figure><img src="pic/xmen.jpg" alt="img1" id="men" index = "8" height="500px"/></figure>
+			</div>	
+		</div>
+	</section>
+	<section id = "question-modal">
+		<!-- Modal Information Box -->
+			<div class="overlay" id="modal">
+				<div class="content">
+					<h3></h3>
+						<ul id = "choices">
+							<li><input type='radio' class='option' id='option' name='option' value="0"></li> 
+							<li><input type='radio' class='option' id='option' name='option' value="1"></li>
+							<li><input type='radio' class='option' id='option' name='option' value="2"></li>
+							<li><input type='radio' class='option' id='option' name='option' value="3"></li>
+						</ul>
+						<a class="close" id="submit-answer" href="#">SUBMIT</a>
+				</div>
+			</div>
+	</section>
+	<section class = "result-section">
+		<div class="overlay-result" id="result-modal">
+			<div class="content">
+				<h3 id ="show-score"></h3>
+			</div>
+		</div>
+	</section>	
+</body>
+</html> 
