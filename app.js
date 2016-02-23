@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 var questions = [
 //Question 1 
 {
